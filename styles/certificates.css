@@ -1,0 +1,107 @@
+:root{
+    --main-col: rgb(0, 0, 0);
+}
+body {
+    background-image: url('../images/cert.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background image fixed in place */
+    background-position: center; /* Center the image */
+}
+main{
+    display: flex;
+    padding: 20px;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: var(--main-col);
+}
+.certificate{
+    width: 450px;
+    padding: 20px;
+    height: 500px;
+    border-radius: 10px;
+    /* border: 2px solid var(--main-col); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.cimg img{
+    border: 2px solid black;
+}
+.ctitle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+.btns{
+    width: 400px;
+    margin-top: 40px;
+}
+
+.btns button{
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.btns button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.view{
+    background-color: #95BDFF;
+}
+.download{
+    background-color: #9ADE7B;
+}
+.cert-box{
+    position: fixed;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.close{
+    color: black;
+    font-size: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .certificate{
+        width: 270px;
+        height: 300px;
+    }
+    .certificate img{
+        width: 250px;
+        height: 200px;
+    }
+    .ctitle{
+        width: 270px;
+        font-size: 15px;
+    }
+    .btns{
+        width: 270px;
+    }
+    .cert-box{
+        max-width: 80vw;
+        padding: 0;
+    }
+    .close{
+        font-size: 15px;
+        /* margin: 10px; */
+    }
+    .cert-box iframe{
+        width: 60vw;
+    }
+}
