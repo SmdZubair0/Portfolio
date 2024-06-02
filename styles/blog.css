@@ -8,3 +8,9 @@ body {
 .cimg img{
     border: 2px solid black;
 }
+@media screen and (max-width: 75px){
+    .blog ctitle{
+        font-size: 15px;
+    }
+}
+        
