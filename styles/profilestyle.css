@@ -51,11 +51,11 @@ body {
 @media screen and (max-width: 750px) {
     .platform{
         width: 180px;
-        height: auto;
+        height: 300px;
     }
     .platform img{
         width: 150px;
-        height: 150px;
+        height: auto;
         margin: 15px 10px;
         margin-bottom: 5px;
     }

@@ -5,3 +5,6 @@ body {
     background-attachment: fixed; /* Make the background image fixed in place */
     background-position: center; /* Center the image */
 }
+.cimg img{
+    border: 2px solid black;
+}
