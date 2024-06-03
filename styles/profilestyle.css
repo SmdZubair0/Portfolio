@@ -18,7 +18,8 @@ body {
 }
 .platform{
     max-width: 800px;
-    height: 550px;
+    min-height: 550px;
+    height: auto;
     border: 3px solid var(--main-col);
     display: flex;
     align-items: center;
