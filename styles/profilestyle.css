@@ -52,7 +52,8 @@ body {
 @media screen and (max-width: 750px) {
     .platform{
         width: 180px;
-        height: 300px;
+        min-height: 300px;
+        height: auto;
     }
     .platform img{
         width: 150px;
