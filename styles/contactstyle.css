@@ -19,7 +19,7 @@ main{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 20vw;
+    width: auto;
 }
 .platform a{
     /* margin: 20px; */
@@ -34,6 +34,7 @@ main{
 .platform img{
     height: 50px;
     width: 50px;
+    margin-right: 2vw;
 }
 .contacts{
     width: 80vw;
