@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../images/projects3.png');
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background image fixed in place */
+    background-position: center; /* Center the image */
+}
+.know2{
+    color: rgb(0, 140, 255);
+    width: 70vw;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 7vh 0;
+}
+.know2 a{
+    color: rgb(0, 140, 255);
+    font-weight: bold;
+}
+.know2 a:hover{
+    scale: 1.1;
+}
+main{
+    font-family: 'arial','Courier New';
+    padding:0 10vw;
+}
+.box{
+    font-size: 30px;
+}
+.bhead{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.box a{
+    color: rgb(0, 140, 255);
+}
+.box ul li:first-child{
+    font-weight: bold;
+    list-style: none;
+}
+.box li{
+    font-weight: 100;
+    list-style: "➣";
+    list-style-position: inside;
+}
+.box ul{
+    margin: 25px 0;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projectpage.css">
+    <!-- <script type="module" src="script.js"></script> -->
+</head>
+<body>
+    <div class="body"></div>
+    <header>
+        <span class="menu-toggle" onclick="toggleSidebar()">&#9776;</span>
+        <nav class="navbar">
+            <div class="title">
+                Portfolio
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="profiles.html">Coding Profiles</a></li>
+                <li><a href="contact.html">Contact info</a></li>
+            </ul>
+        </nav>
+        <nav class="sidebar">
+            <div class="title">
+                Portfolio
+            </div>
+            <ul class="side-navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="profiles.html">Coding Profiles</a></li>
+                <li><a href="contact.html">Contact info</a></li>
+            </ul>
+        </nav>
+        <div class="img">
+            <img src="images/house2.jpeg"  alt="">
+        </div>
+        <div class="name">
+            House Price Prediction
+        </div>
+    </header>
+
+    <main>
+        <div class="know2">
+            <a href="project.html">&#x2190; Back to Projects Page</a>
+        </div>
+        <div class="box">
+            <div class="bhead">Introduction</div>
+            This is a Machine Learning application to predict prices of different houses present in Bangalore city. I made this project in order to showcase my Machine Learning skills.
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Data used:
+            </div>
+            Banglore House Price Dataset <a href="https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data">Click Here</a><br>
+            The dataset contained lots of imformation about different houses in bangalore. The data was not ready for model training and required lots of data processing and feature engineering steps.
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Workflow:
+            </div>
+            <ul>
+                <li>Data preperation</li>
+                <li>Removing inappropriate Data</li>
+                <li>Filling missing values</li>
+                <li>Handling Outliers</li>
+                <li>Encoding Features</li>
+                <li>Selecting important Features</li>
+            </ul>
+            <ul>
+                <li>Model Training and Evaluation</li>
+                <li>Splited data into training and testing sets</li>
+                <li>Trained different models like LinearRegression, DecisionTreeRegressor, Ensemble models etc.</li>
+                <li>Performed Hyperparameter tuning</li>
+                <li>Evaluated performance using metrics like r2 score</li>
+                <li>Finally Selected StackingRegressor model</li>
+            </ul>
+            <ul>
+                <li>Deployment</li>
+                <li>Created web page using HTML,CSS</li>
+                <li>Integrated model with web page using Flask</li>
+                <li>Uploaded to GitHub</li>
+            </ul>
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Libraries and Frameworks used:
+            </div>
+            Python <br>
+            Pandas <br>
+            Numpy <br>
+            Matplotlib <br>
+            Sklearn <br>
+            HTML <br>
+            CSS <br>
+            Flask <br>
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Conclusion:
+            </div>
+            By doing this project I gained some experience in Machine Learing and got knowledge to build a full Machine Learing model
+        </div>
+
+
+        <div class="know2">
+            <a href="https://github.com/SmdZubair0/House-price-prediction">Code link &#8594;</a>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2024 SmdZubair | Powered by SmdZubair
+    </footer>
+    
+    <script src="nav.js"></script>
+</body>
+</html>
