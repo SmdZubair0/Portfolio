@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projectpage.css">
+    <!-- <script type="module" src="script.js"></script> -->
+</head>
+<body>
+    <div class="body"></div>
+    <header>
+        <span class="menu-toggle" onclick="toggleSidebar()">&#9776;</span>
+        <nav class="navbar">
+            <div class="title">
+                Portfolio
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="profiles.html">Coding Profiles</a></li>
+                <li><a href="contact.html">Contact info</a></li>
+            </ul>
+        </nav>
+        <nav class="sidebar">
+            <div class="title">
+                Portfolio
+            </div>
+            <ul class="side-navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="profiles.html">Coding Profiles</a></li>
+                <li><a href="contact.html">Contact info</a></li>
+            </ul>
+        </nav>
+        <div class="img">
+            <img src="images/movie2.jpeg"  alt="">
+        </div>
+        <div class="name">
+            Movie Recommendation System
+        </div>
+    </header>
+
+    <main>
+        <div class="know2">
+            <a href="project.html">&#x2190; Back to Projects Page</a>
+        </div>
+        <div class="box">
+            <div class="bhead">Introduction</div>
+            This is a Machine Learning application that recommends similar movies based on the given input movie.
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Data used:
+            </div>
+            TMDB Movies Dataset <a href="">Click Here</a><br>
+            The dataset contained lots of imformation about movies of various languages and regions. The data was not ready for model training and required lots of data processing and feature engineering steps.
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Workflow:
+            </div>
+            <ul>
+                <li>Data preperation</li>
+                <li>Removing inappropriate Data</li>
+                <li>Filling missing values</li>
+                <li>Handling Outliers</li>
+                <li>Encoding Features</li>
+                <li>Selecting important Features</li>
+                <li>Converted them to Vectors using Word Embeddings</li>
+            </ul>
+            <ul>
+                <li>Model Training</li>
+                <li>Calculated cosine similarities between vectors</li>
+                <li>Defined a function to predict 5 similar vectors(movies)</li>
+            </ul>
+            <ul>
+                <li>Deployment</li>
+                <li>Created web page using HTML,CSS</li>
+                <li>Integrated model with web page using Flask</li>
+                <li>Uploaded to GitHub</li>
+            </ul>
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Libraries and Frameworks used:
+            </div>
+            Python <br>
+            Pandas <br>
+            Numpy <br>
+            Matplotlib <br>
+            Sklearn <br>
+            Ginsim <br>
+            HTML <br>
+            CSS <br>
+            Flask <br>
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Conclusion:
+            </div>
+            By doing this project I gained some experience in Machine Learing and NLP and got knowledge to build a full Machine Learing model
+        </div>
+
+
+        <div class="know2">
+            <a href="https://github.com/SmdZubair0/House-price-prediction">Code link &#8594;</a>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2024 SmdZubair | Powered by SmdZubair
+    </footer>
+    
+    <script src="nav.js"></script>
+</body>
+</html>
