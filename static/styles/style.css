@@ -120,10 +120,8 @@ footer{
 }
 .resumes img{
     transition: 1s;
-    max-width: 30px;
-    max-height: 15px;
-    width: 25px;
-    height: 10px;
+    width: 30px;
+    height: 15px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -156,6 +154,7 @@ footer{
     transform: 0.5s;
     width: 0;
     background-color: rgb(165, 165, 165);
+    z-index: 100;
 }
 .sidebar .title{
     margin: 50px 0;
@@ -166,12 +165,14 @@ footer{
 }
 .side-navlist li a{
     color: black;
-    padding: 10px 15px;
+    margin: 10px 15px;
+    padding: 5px 0;
     text-decoration: none;
     font-size: 25px;
     /* color: white; */
     display: block;
     transition: 0.3s;
+    border-bottom: 1px solid black;
 }
 .side-navlist li a:hover{
     background-color: #575757;
@@ -186,6 +187,7 @@ footer{
     top: 0;
     position: fixed;;
 }
+
 
 @media screen and (max-width: 790px) {
     .navbar {
@@ -207,6 +209,10 @@ footer{
     }
     .resume{
         font-size: 15px;
+    }
+    .resumes img{
+        height: 10px;
+        width: 20px;
     }
     .btns button{
         font-size: 10px;
