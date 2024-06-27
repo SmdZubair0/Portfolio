@@ -1,57 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/projectpage.css">
-    <!-- <script type="module" src="script.js"></script> -->
-</head>
-<body>
-    <div class="body"></div>
-    <header>
-        <span class="menu-toggle" onclick="toggleSidebar()">&#9776;</span>
-        <nav class="navbar">
-            <div class="title">
-                Portfolio
-            </div>
-            <ul class="navlist">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="profiles.html">Coding Profiles</a></li>
-                <li><a href="contact.html">Contact info</a></li>
-            </ul>
-        </nav>
-        <nav class="sidebar">
-            <div class="title">
-                Portfolio
-            </div>
-            <ul class="side-navlist">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="profiles.html">Coding Profiles</a></li>
-                <li><a href="contact.html">Contact info</a></li>
-            </ul>
-        </nav>
+{% block title %}
+    House Price project
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/projectpage.css') }}">
+{% endblock styles %}
+
+{% block img %}
         <div class="img">
-            <img src="images/house2.jpeg"  alt="">
+            <img src="{{ url_for('static', filename='images/house2.jpeg') }}"  alt="">
         </div>
         <div class="name">
             House Price Prediction
         </div>
-    </header>
+{% endblock img %}
 
-    <main>
+{% block content %}
         <div class="know2">
-            <a href="project.html">&#x2190; Back to Projects Page</a>
+            <a href="{{ url_for('project') }}">&#x2190; Back to Projects Page</a>
+        </div>
+        <div class="bhead">
+            <b>Website : </b><a href="https://house-price-prediction-si6p.onrender.com">Click Here</a>
         </div>
         <div class="box">
             <div class="bhead">Introduction</div>
@@ -115,12 +86,4 @@
         <div class="know2">
             <a href="https://github.com/SmdZubair0/House-price-prediction">Code link &#8594;</a>
         </div>
-    </main>
-
-    <footer>
-        Copyright © 2024 SmdZubair | Powered by SmdZubair
-    </footer>
-    
-    <script src="nav.js"></script>
-</body>
-</html>
+{% endblock content %}

@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %} Portfolio - Projects {% endblock title %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/project.css') }}">
+{% endblock styles %}
+
+{% block img %}
+        <div class="img">
+            <img  src="{{ url_for('static', filename='images/projects2.jpg') }}" alt="">
+        </div>
+        <div class="name">
+            Projects
+        </div>
+{% endblock img %}
+
+{% block content %}
+        <div class="ptitle">
+            Machine Learning projects
+        </div>
+        <div class="projects ml-projects">
+            <div class="card">
+                <div class="cimg">
+                    <img height="200px" width="300px" src="{{ url_for('static', filename='images/house.jpeg') }}" alt="">
+                </div>
+                
+                <div class="ctitle">House Price Prediction</div>
+                <div class="ctext">
+                    <div class="ctext"><a href="{{ url_for('projectpage', name='houseprice') }}">see details</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cimg">
+                    <img height="200px" width="300px" src="{{ url_for('static', filename='images/movie.avif') }}" alt="">
+                </div>
+                
+                <div class="ctitle">Movie Recommendation System</div>
+                <div class="ctext">
+                    <div class="ctext"><a href="{{ url_for('projectpage', name='movierecomendation') }}">see details</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cimg">
+                    <img height="200px" width="300px" src="{{ url_for('static', filename='images/vai.avif') }}" alt="">
+                </div>
+                
+                <div class="ctitle">Virtual Assistant</div>
+                <div class="ctext">
+                    <div class="ctext"><a href="">see details</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="ptitle">
+            Web Projects
+        </div>
+        <div class="projects web-projects">
+            <div class="card">
+                <div class="cimg">
+                    <img height="200px" width="300px" src="{{ url_for('static', filename='images/netflix.png') }}" alt="">
+                </div>
+                
+                <div class="ctitle">Netflix clone (frontend)</div>
+                <div class="ctext">
+                    <div class="ctext"><a href="">see details</a></div>
+                </div>
+            </div>
+
+        </div>
+{% endblock content %}

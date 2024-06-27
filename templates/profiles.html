@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio - Coding profiles
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/profilestyle.css') }}">
+{% endblock styles %}
+
+{% block img %}
+        <div class="img">
+            <img width="180px" src="{{ url_for('static', filename='images/code.jpg') }}" alt="">
+        </div>
+        <div class="name">
+            Coding Profiles
+        </div>
+{% endblock img %}
+
+{% block content %}
+    <div class="platforms">
+        <div class="platform">
+            <img src="{{ url_for('static', filename='images/leetcode.jpeg') }}" width="300px" alt="">
+            <div class="p-text">
+                <div class="p-title">Leetcode</div>
+                <div class="p-content">
+                    <b>Username : </b>smdzubair0
+                    <br>
+                    <b>Problems Solved : </b>281
+                    <br>
+                    <b>Rank : </b>273,738
+                    <br>
+                    <b>Profile : </b><a href="https://leetcode.com/u/smdzubair0/">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="platform">
+            <img src="{{ url_for('static', filename='images/hackerrank.png') }}" width="300px" alt="">
+            <div class="p-text">
+                <div class="p-title">Hackerrank</div>
+                <div class="p-content">
+                    <b>Username : </b>smdzubair0
+                    <br>
+                    <b>Points : </b>2270.36
+                    <br>
+                    <b>Rank : </b>40799
+                    <br>
+                    <b>Profile : </b><a href="https://www.hackerrank.com/profile/smdzubair0">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="platform">
+            <img src="{{ url_for('static', filename='images/codechef.jpg') }}" width="300px" alt="">
+            <div class="p-text">
+                <div class="p-title">Codechef</div>
+                <div class="p-content">
+                    <b>Username : </b>smdzubair0
+                    <br>
+                    <b>Problems Solved : </b>428
+                    <br>
+                    <b>Rating : </b>1274
+                    <br>
+                    <b>Profile : </b><a href="https://www.codechef.com/users/smdzubair0">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

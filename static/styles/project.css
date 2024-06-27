@@ -1,0 +1,89 @@
+body {
+    background-image: url('../images/project.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.ptitle{
+    align-self: start;
+    margin: 30px;
+    margin-left: 10vw;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.projects{
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+.card{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 400px;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.cimg{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+.ctext{
+    justify-self: baseline;
+}
+.ctext a{
+    padding: 5px;
+    font-size: 25px;
+    color: rgb(0, 46, 229);
+}
+.ctext:hover{
+    transition: 0.5s;
+    scale: 1.1;
+}
+.ctitle{
+    margin: 15px 0;
+    color: rgb(2, 2, 2);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 790px) {
+    main{
+        padding: 30px;
+        align-items: center;
+    }
+    .card{
+        width: 260px;
+        padding:5px;
+        height:auto;
+        margin-bottom: 15px;
+    }
+    .cimg{
+        width: 250px;
+        height: 200px;
+    }
+    .cimg img{
+        width: 250px;
+        height: 200px;
+
+    }
+}

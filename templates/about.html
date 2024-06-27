@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block title %} Portfolio - About me {% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/homestyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+{% endblock styles %}
+
+
+{% block img %}
+        <div class="img">
+            <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="">
+        </div>
+        <div class="name">
+            About Me
+        </div>
+{% endblock img %}
+
+{% block content %}
+
+    <div class="about">
+        <div class="e-title">About Me</div>
+        <div class="about-content">
+            
+            <div class="aimg"></div>
+            <div class="a-content">
+                I am Shaik Mohammed Zubair, currently pursuing Bachelor's degree in Artificial Intelligence at GPCET. I specialize in Machine Learning and Deep Learning and did a few projects on web development. With a strong desire to solve problems, I constantly seek innovative solutions using the latest tools and techniques. My academic journey has been fueled by a deep fascination with how intelligent systems can revolutionize various aspects of our lives.
+                <br><br>
+                My academic and project experiences have instilled a deep fascination with AI's potential to create innovative solutions for real-world problems. I am committed to staying updated with the latest advancements in AI and continuously enhancing my skill set. I am particularly interested in opportunities that involve interdisciplinary collaboration to develop AI-driven solutions addressing global challenges.
+            </div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="e-title">Skills</div>
+        <div class="year skill">
+            Machine Learning :
+            <div class="progress">
+                <div class="innerbar ml"></div>85%
+            </div>
+        </div>
+        <div class="year skill">
+            Deep Learning :
+            <div class="progress">
+                <div class="innerbar dl"></div>80%
+            </div>
+        </div>
+        <div class="year skill">
+            Natural Language Processing :
+            <div class="progress">
+                <div class="innerbar nlp"></div>70%
+            </div>
+        </div>
+        <div class="year skill">
+            Web development :
+            <div class="progress">
+                <div class="innerbar wd"></div>70%
+            </div>
+        </div>
+        <div class="year skill">
+            Python :
+            <div class="progress">
+                <div class="innerbar py"></div>85%
+            </div>
+        </div>
+        <div class="year skill">
+            Data Analysis :
+            <div class="progress">
+                <div class="innerbar da"></div>85%
+            </div>
+        </div>
+        <div class="year skill">
+            Data Structures and Algorithms :
+            <div class="progress">
+                <div class="innerbar dsa"></div>65%
+            </div>
+        </div>
+    </div>
+    
+    <div class="education">
+        <div class="e-title">Education</div>
+        <div class="about-content">
+            <div class="year">2021-2025</div>
+            <div class="course">
+                <div class="college">G. Pullaiah College of Engineering and Technology</div>
+                <div class="marks">
+                    Computer Sciece and Engineering - Artificial Intelligence (CAI) <br>
+                    <b>CGPA :</b>8.9
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="year">2019-2021</div>
+            <div class="course">
+                <div class="college">Narayana Junior College</div>
+                <div class="marks">
+                    MPC <br>
+                    <b>Percentage :</b>96.7%
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="year">2019</div>
+            <div class="course">
+                <div class="college">K.V.R English medium high school</div>
+                <div class="marks">
+                    
+                    <b>CGPA :</b>10.0
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="education experience">
+        <div class="e-title">Experience</div>
+        <div class="about-content">
+            <div class="year">May 2024 - Present
+                <div class="company">IIITDM</div>
+            </div>
+            <div class="course">
+                <div class="college">AI DEVELOPER INTERN</div>
+                <div class="marks">
+                    With my knowledge in the field of NLP and speech recognition, I dedicated myself to developing a VOICE-BASED PAYMENT SYSTEM at IITDM.
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="year">Sept 2023 - March 2024
+                <div class="company">Smart Interviews</div>
+            </div>
+            <div class="course">
+                <div class="college">Smart Coder - DSA training</div>
+                <div class="marks">
+                    I attended a 6-month DSA training program conducted by Smart Interviews to enhance my knowledge in Data Structures and Algorithms
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="year">March 2023 - April 2023
+                <div class="company">Oasis Infobyte</div>
+            </div>
+            <div class="course">
+                <div class="college">Data Science Intern</div>
+                <div class="marks">
+                    I applied my knowledge in Data Science and completed multiple tasks as an intern at Oasis Infobyte
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio - certificates
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/certificates.css') }}">
+{% endblock styles %}
+
+{% block img %}
+        <div class="img">
+            <img  src="{{ url_for('static', filename='images/certified.png') }}" alt="">
+        </div>
+        <div class="name">
+            Certificates
+        </div>
+{% endblock img %}
+
+{% block content %}
+        <div class="certificate">
+            <div class="cimg">
+                <img src="{{ url_for('static', filename='images/certificates/ai.png') }}" height="300px" width="400px" alt="">
+            </div>
+            <div class="ctitle">Introduction to Artificial Intelligence (AI) - IBM
+
+                <div class="btns">
+                    <a href="{{ url_for('static', filename='pdfs/ai.pdf') }}"><button class="view">View</button></a>
+                    <a href="{{ url_for('static', filename='pdfs/ai.pdf') }}" download><button class="download">Download</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="certificate">
+            <div class="cimg">
+                <img src="{{ url_for('static', filename='images/certificates/ML_bootcamp.png') }}" height="300px" width="400px" alt="">
+            </div>
+            <div class="ctitle">ML Bootcamp - Make Skilled
+                <div class="btns">
+                    <a href="{{ url_for('static', filename='pdfs/ml_bootcamp.PDF') }}" ><button class="view">View</button></a>
+                    <a href="{{ url_for('static', filename='pdfs/ml_bootcamp.PDF') }}" download><button class="download">Download</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="certificate">
+            <div class="cimg">
+                <img src="{{ url_for('static', filename='images/certificates/oasis.png') }}" height="300px" width="400px" alt="">
+            </div>
+            <div class="ctitle">Data Science internship - Oasis Infobyte
+                <div class="btns">
+                    <a href="{{ url_for('static', filename='pdfs/oasis.pdf') }}" ><button class="view">View</button></a>
+                    <a href="{{ url_for('static', filename='pdfs/oasis.pdf') }}" download><button class="download">Download</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="certificate">
+            <div class="cimg">
+                <img src="{{ url_for('static', filename='images/certificates/python_101.png') }}" height="300px" width="400px" alt="">
+            </div>
+            <div class="ctitle">Python 101 for Data Science - Cognitive Class
+                <div class="btns">
+                    <a href="{{ url_for('static', filename='pdfs/python_101.pdf') }}" ><button class="view">View</button></a>
+                    <a href="{{ url_for('static', filename='pdfs/python_101.pdf') }}" download><button class="download">Download</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="certificate">
+            <div class="cimg">
+                <img src="{{ url_for('static', filename='images/certificates/email.png') }}" height="300px" width="400px" alt="">
+            </div>
+            <div class="ctitle"> Write Professional Emails in English - Georgia Institute of Technology
+                <div class="btns">
+                    <a href="{{ url_for('static', filename='pdfs/email.pdf') }}" ><button class="view">View</button></a>
+                    <a href="{{ url_for('static', filename='pdfs/email.pdf') }}" download><button class="download">Download</button></a>
+                </div>
+            </div>
+        </div>
+{% endblock content %}

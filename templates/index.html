@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block title %} Portfolio {% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/project.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/homestyle.css') }}">
+{% endblock %}
+
+{% block img %}
+    <div class="img">
+        <img src="{{ url_for('static', filename='images/img.jpg') }}" alt="">
+    </div>
+    <div class="name">
+        Shaik Mohammed Zubair
+        <div class="contacts">
+            <div class="platforms">
+                <a href="https://www.linkedin.com/in/shaik-mohammed-zubair-0898aa259"><img src="{{ url_for('static', filename='images/linkedin.png') }}"
+                    alt="">
+                </a>
+            </div>
+            <div class="platform">
+                <a href="https://github.com/SmdZubair0"><img src="{{ url_for('static', filename='images/git.png') }}" alt="">
+                </a>
+            </div>
+            <div class="platform">
+                <a href="mailto:smohammedzubair0@gmail.com"><img src="{{ url_for('static', filename='images/mail.png') }}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock img %}
+
+{% block resume %}
+    <div class="resumes">
+        Download Resume <img class="arrow" src="{{ url_for('static', filename='images/download.png') }}" alt="">
+        <div class="resume creative">
+            <a href="#"><button>Creative Resume</button></a>
+        </div> 
+        <div class="resume traditional">
+            <a href="{{ url_for('static', filename='pdfs/traditional.pdf') }}"><button>Traditional Resume</button></a>
+        </div> 
+    </div>
+{% endblock resume %}
+
+
+{% block content %}
+    <div class="about">
+        <div class="e-title">About Me</div>
+        <div class="about-content">
+            
+            <div class="aimg"></div>
+            <div class="a-content">
+                I am Shaik Mohammed Zubair, currently pursuing Bachelor's degree in Artificial Intelligence at GPCET. I specialize in Machine Learning and Deep Learning and did a few projects on web development. With a strong desire to solve problems, I constantly seek innovative solutions using the latest tools and techniques. My academic journey has been fueled by a deep fascination with how intelligent systems can revolutionize various aspects of our lives.
+                <div class="know"><a href="{{ url_for('about') }}">know more &#8594;</a></div>
+            </div>
+        </div>
+        <div class="education">
+            <div class="e-title">Education</div>
+            <div class="about-content">
+                <div class="year">2021-2025</div>
+                <div class="course">
+                    <div class="college">G. Pullaiah College of Engineering and Technology</div>
+                    <div class="marks">
+                        Computer Sciece and Engineering - Artificial Intelligence (CAI) <br>
+                        <b>CGPA :</b>8.9
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="year">2019-2021</div>
+                <div class="course">
+                    <div class="college">Narayana Junior College</div>
+                    <div class="marks">
+                        MPC <br>
+                        <b>Percentage :</b>96.7%
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="year">2019</div>
+                <div class="course">
+                    <div class="college">K.V.R English medium high school</div>
+                    <div class="marks">
+                        
+                        <b>CGPA :</b>10.0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="e-title">
+                Projects
+            </div>
+            <div class="projects">
+                <div class="card">
+                    <div class="cimg">
+                        <img height="200px" width="300px" src="{{ url_for('static', filename='images/house.jpeg') }}" alt="">
+                    </div>
+                    <div class="ctitle">House Price Prediction</div>
+                    <div class="ctext"><a href="houseprice.html">see details</a></div>
+                </div>
+                <div class="card">
+                    <div class="cimg">
+                        <img height="200px" width="300px" src="{{ url_for('static', filename='images/movie.avif') }}" alt="">
+                    </div>
+                    <div class="ctitle">Movie Recommendation System</div>
+                    <div class="ctext"><a href="movierecomendation.html">see details</a></div>
+                </div>
+                
+                
+                <div class="know"><a href="{{ url_for('project') }}">View more &#8594;</a></div>
+            </div>
+        </div>
+        
+    </div> 
+    
+    <div class="know2">know more<a href="{{ url_for('about') }}">&#8594;</a></div>
+{% endblock content %}

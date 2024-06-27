@@ -1,0 +1,100 @@
+:root{
+    --main-col: rgb(0, 0, 0);
+}
+body {
+    background-image: url('../images/bg3.avif');
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background image fixed in place */
+    background-position: center; /* Center the image */
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.platforms{
+    height: 45vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+}
+.platform a{
+    /* margin: 20px; */
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--main-col);
+}
+.platform img{
+    height: 50px;
+    width: 50px;
+    margin-right: 2vw;
+}
+.contacts{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    padding: 0 20px;
+}
+.ctitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.text{
+    width: 40vw;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.contact{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    font-size:x-large;
+    flex-direction: column;
+    padding: 10px;
+}
+.contact span{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact span img{
+    height: 15px;
+    width: 15px;
+    margin: 20px;
+}
+@media screen and (max-width: 790px) {
+    .platform a{
+        height: 50px;
+        font-size: 15px;
+    }
+    .platform a img{
+        width: 40px;
+        margin: 12px 0;
+    }
+    .platforms{
+        width: 70vw;
+    }
+    .text{
+        width: 70vw;
+    }
+    .contact{
+        font-size: 20px;
+    }
+    .contact span img{
+        margin-left: 0;
+    }
+    .contact span b{
+        margin-right: 5px;
+    }
+}

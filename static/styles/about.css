@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../images/resume-bg.avif');
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background image fixed in place */
+    background-position: center; /* Center the image */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+.year{
+    font-size: 2.5vw;
+}
+.college{
+    font-size: 2.5vw;
+}
+.skill{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vw;
+    flex-wrap: wrap;
+}
+.progress{
+    width: 35vw;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(73, 150, 251);
+    display: flex;
+    color: white;
+    padding: 5px;
+    margin: 20px 0;
+    font-size: 18px;
+    align-items: center;
+    padding-right: 20px;
+    min-width: 300px;
+}
+.innerbar{
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.ml{
+    width: 85%;
+}
+.dl{
+    width: 80%;
+}
+.nlp{
+    width: 70%;
+}
+.wd{
+    width: 70%;
+}
+.py{
+    width: 85%;
+}
+.da{
+    width: 85%;
+}
+.dsa{
+    width: 75%;
+}
+.company{
+    font-weight: 100;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.marks{
+    font-size: 1.5vw;
+}
+.experience{
+    margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 790px) {
+    .about{
+        padding: 10px;
+        margin: 0;
+    }
+    .a-content{
+        font-size: 15px;
+        margin-top: 20px;
+        width: 80vw;
+    }
+    .aimg{
+        width: 50vw;
+        height: 50vw;
+    }
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .e-title{
+        font-size: 30px;
+        margin-bottom: 1vh;
+    }
+    .education{
+        height: auto;
+    }
+    .year{
+        font-size: 25px;
+        align-self: flex-start;
+        margin: 2vh 0;
+        width: auto;
+    }
+    .course{
+        width: 80vw;
+        height: auto;
+    }
+    .college{
+        font-size: 20px;
+        margin-bottom: 2vh;
+    }
+    .marks{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .skill{
+        flex-direction: column;
+        align-items: start;
+        font-size: 20px;
+    }
+    .progress{
+        height: 15px;
+        font-size: 15px;
+    }
+    .company{
+        margin: 10px 0;
+    }    
+}
