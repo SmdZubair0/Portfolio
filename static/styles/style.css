@@ -116,7 +116,7 @@ footer{
     font-size: 30px;
     font-weight: bold;
     justify-content: center;
-    color: rgb(0, 139, 239);
+    color: rgb(51, 158, 234);
 }
 .resumes img{
     transition: 1s;
@@ -183,7 +183,7 @@ footer{
     cursor: pointer;
     align-self: flex-start;
     padding-left: 15px;
-    z-index: 100;
+    z-index: 105;
     top: 0;
     position: fixed;;
 }
@@ -205,7 +205,7 @@ footer{
     }
     .resumes{
         font-size: 20px;
-        width: 200px;
+        width: 230px;
     }
     .resume{
         font-size: 15px;

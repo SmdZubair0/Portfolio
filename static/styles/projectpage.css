@@ -44,7 +44,7 @@ main{
     list-style: none;
 }
 .box li{
-    font-weight: 100;
+    font-weight: normal;
     list-style: "➣";
     list-style-position: inside;
 }
@@ -52,7 +52,7 @@ main{
     margin: 25px 0;
 }
 .bhead a{
-    font-weight: 100;
+    font-weight: normal;
     text-decoration: underline;
     color: rgb(0, 140, 255);
 }

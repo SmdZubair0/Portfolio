@@ -33,16 +33,20 @@ main{
     border: 2px solid black;
 }
 .ctitle{
+    height: 200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 30px;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
 }
 .btns{
     width: 400px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    /* justify-self: end; */
+    
 }
 
 .btns button{
@@ -80,6 +84,7 @@ main{
         height: 200px;
     }
     .ctitle{
+        height: 100px;
         width: 270px;
         font-size: 15px;
     }
