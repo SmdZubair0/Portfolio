@@ -20,12 +20,12 @@ body {
     max-width: 800px;
     min-height: 550px;
     height: auto;
-    border: 3px solid var(--main-col);
+    /* border: 3px solid var(--main-col); */
     display: flex;
     align-items: center;
     color: var(--main-col);
     /* justify-content: space-around; */
-    background: var(--plt-bg-col);
+    /* background: var(--plt-bg-col); */
     border-radius: 20px;
     margin: 20px;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
 .platform img{
     width: 200px;
     margin: 20px;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 .p-text{
     width: 300px;
@@ -54,12 +54,12 @@ body {
 @media screen and (max-width: 790px) {
     .platform{
         width: 180px;
-        min-height: 320px;
+        min-height: 250px;
         height: auto;
         justify-content: center;
     }
     .platform img{
-        width: 150px;
+        width: 100px;
         height: auto;
         margin: 8px 10px;
         /* margin-bottom: 5px; */
