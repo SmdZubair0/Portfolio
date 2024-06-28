@@ -111,7 +111,7 @@ footer{
 .resumes{
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 350px;
     align-items: center;
     font-size: 30px;
     font-weight: bold;
