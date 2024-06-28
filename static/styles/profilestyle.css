@@ -20,16 +20,16 @@ body {
     max-width: 800px;
     min-height: 550px;
     height: auto;
-    /* border: 3px solid var(--main-col); */
+    border: 3px solid var(--main-col);
     display: flex;
     align-items: center;
     color: var(--main-col);
     /* justify-content: space-around; */
-    /* background: var(--plt-bg-col); */
+    background: var(--plt-bg-col);
     border-radius: 20px;
     margin: 20px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .platform img{
     width: 200px;
@@ -38,7 +38,7 @@ body {
 }
 .p-text{
     width: 300px;
-    height: 280px;
+    /* height: 280px; */
     margin: 0 30px;
     font-size: 30px;
 }
@@ -70,7 +70,7 @@ body {
     }
     .p-text{
         width: 100px;
-        height: 120px;
+        /* height: 120px; */
         font-size: 10px;
         margin: 10px;
     }
