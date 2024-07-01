@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Mobile Phone Price Prediction project
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/projectpage.css') }}">
+{% endblock styles %}
+
+{% block img %}
+        <div class="img">
+            <img src="{{ url_for('static', filename='images/mobile.jpeg') }}"  alt="">
+        </div>
+        <div class="name">
+            Mobile Phone Price Prediction
+        </div>
+{% endblock img %}
+
+{% block content %}
+        <div class="know2">
+            <a href="{{ url_for('project') }}">&#x2190; Back to Projects Page</a>
+        </div>
+        <div class="bhead">
+            <b>Website : </b><a href="https://phone-price-prediction-witp.onrender.com">Click Here</a>
+        </div>
+        <div class="box">
+            <div class="bhead">Introduction</div>
+            This is a Machine Learning application to predict prices of different mobiles as per Flipkart. I made this project in order to showcase my Machine Learning skills.
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Data used:
+            </div>
+            Mobile Price Dataset <a href="https://www.kaggle.com/datasets/shaikmohammedzubair/mobile-phone-prices">Click Here</a><br>
+            I created this dataset by collecting data of various mobile phones through web scrapping. The data collected was raw. I had to perform a lots of preprocessing to make it usable
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Workflow:
+            </div>
+            <ul>
+                <li>Data cleaning</li>
+                <li>Data preperation</li>
+                <li>Removing inappropriate Data</li>
+                <li>Filling missing values</li>
+                <li>Handling Outliers</li>
+                <li>Encoding Features</li>
+                <li>Selecting important Features</li>
+            </ul>
+            <ul>
+                <li>Model Training and Evaluation</li>
+                <li>Splited data into training and testing sets</li>
+                <li>Trained different models like LinearRegression, DecisionTreeRegressor, Ensemble models etc.</li>
+                <li>Performed Hyperparameter tuning</li>
+                <li>Evaluated performance using metrics like r2 score</li>
+                <li>Finally Selected RandomForestRegressor model</li>
+            </ul>
+            <ul>
+                <li>Deployment</li>
+                <li>Created web page using HTML,CSS</li>
+                <li>Integrated model with web page using Flask</li>
+                <li>Uploaded to GitHub</li>
+            </ul>
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Libraries and Frameworks used:
+            </div>
+            Python <br>
+            BeautifulSoup <br>
+            Pandas <br>
+            Numpy <br>
+            Matplotlib <br>
+            Seaborn <br>
+            Sklearn <br>
+            HTML <br>
+            CSS <br>
+            Flask <br>
+        </div>
+        <div class="box"> 
+            <div class="bhead">
+                Conclusion:
+            </div>
+            By doing this project I gained some experience in Machine Learing and got knowledge to build a full Machine Learing model
+        </div>
+
+
+        <div class="know2">
+            <a href="https://github.com/SmdZubair0/Phone-price-prediction.git">Code link &#8594;</a>
+        </div>
+{% endblock content %}
