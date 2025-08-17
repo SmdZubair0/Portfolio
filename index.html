@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zubair | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Zubair</div>
+    <nav class="nav" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" class="resume-btn">Resume</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section id="home" class="info">
+    <h1>Shaik Mohammed Zubair</h1>
+    <p>Aspiring AI/ML Developer</p>
+    <div class="info-buttons">
+      <a href="resume.pdf" class="btn">Download Resume</a>
+      <a href="https://github.com/SmdZubair0" target="_blank" class="btn-outline">GitHub</a>
+      <a href="https://www.linkedin.com/in/smdzubair " target="_blank" class="btn-outline">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm Zubair, an aspiring AI Developer with hands-on experience in <b>Machine Learning, Deep Learning, NLP, and LangChain</b>. I’ve built multiple projects, including a recent <b>RAG application</b>, and also have skills in basic web development. Currently working as a <b>QA/Automation Engineer</b> (Java, Selenium, Serenity BDD), I’m actively seeking opportunities to transition into a full-time <b>AI/ML development</b> role.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Stock Price Prediction</h3>
+        <p>Hybrid LSTM model combining stock data and sentiment analysis from news.</p>
+        <a href="#">Code</a>
+      </div>
+      <div class="project-card">
+        <h3>Movie Recommendation System</h3>
+        <p>Content-based recommendation engine built using Python and scikit-learn.</p>
+        <a href="#">Code</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Let’s connect!</p>
+    <div class="contact-links">
+      <a href="mailto:smohammedzubair0@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/smdzubair" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SmdZubair0" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Shaik Mohammed Zubair
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
